@@ -19,7 +19,6 @@ jobs:
           - ""
 
     runs-on: ubuntu-20.04
-    if: github.repository_owner == 'emqx'
     steps:
     - name: clone docs
       uses: actions/checkout@v2
