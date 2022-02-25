@@ -1,4 +1,4 @@
-# EMQ X
+# EMQX
 
 Sample
 
@@ -118,7 +118,7 @@ listener:
 | Field | Default | Description |
 | --- | --- | --- |
 | type | ClusterIP | listener type，include ClusterIP or LoadBalancer |
-| ports | mqtt: 1883 mqtts: 8883 ws: 8083 wss: 8084 dashboard: 18083 api: 8081 | ports of EMQ X, please [EMQ X docs](https://www.emqx.io/docs/en/v4.3/tutorial/deploy.html) |
+| ports | mqtt: 1883 mqtts: 8883 ws: 8083 wss: 8084 dashboard: 18083 api: 8081 | ports of EMQX, please [EMQX docs](https://www.emqx.io/docs/en/v4.3/tutorial/deploy.html) |
 
 > There are different annotations depend on cloud platform. For example, `service.beta.kubernetes.io/aws-load-balancer-type: nlb` need to be set on AWS.
 
@@ -181,7 +181,7 @@ plugins:
 | name | the name of plugins |
 | enable | enable or disable plugins with possible values: true or false |
 
-> Refer to [EMQ X docs](https://docs.emqx.cn/broker/v4.3/advanced/plugins.html#%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8)
+> Refer to [EMQX docs](https://www.emqx.io/docs/zh/v4.3/advanced/plugins.html#%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8)
 
 
 - config modules
@@ -199,10 +199,10 @@ modules:
 | name | the name of module |
 | enable | enable or disable modules with possible values: true or false |
 
-> Refer to [EMQ X docs](https://docs.emqx.cn/broker/v4.3/advanced/internal-modules.html)
+> Refer to [EMQX docs](https://www.emqx.io/docs/zh/v4.3/advanced/internal-modules.html)
 >
 
-- config license（only for EMQ X Enterprise）
+- config license（only for EMQX Enterprise）
 
 | Field | Default | Description |
 | --- | --- | --- |

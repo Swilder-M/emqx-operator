@@ -4,7 +4,7 @@
       "title": "Introduction",
       "children": [
         {
-          "title": "EMQ X Operator introduction",
+          "title": "EMQX Operator introduction",
           "path": "./"
         },
         {
@@ -54,7 +54,7 @@
       "title": "产品介绍",
       "children": [
         {
-          "title": "EMQ X Operator是什么",
+          "title": "EMQX Operator是什么",
           "path": "./"
         },
         {

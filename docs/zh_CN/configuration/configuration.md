@@ -1,4 +1,4 @@
-# EMQ X
+# EMQX
 
 例子
 
@@ -99,8 +99,8 @@ volumeClaimTemplate:
 | --- | --- | --- |
 | storageClassName | standard | 存储类的名称 |
 | storage | 20Mi | 存储容量 |
-| accessModes | ReadWriteOnce | 挂载模式，有ReadWriteOnce，ReadOnlyMany 和 ReadWriteMany |
-- 配置Load Balancer
+| accessModes | ReadWriteOnce | 挂载模式，有 ReadWriteOnce，ReadOnlyMany 和 ReadWriteMany |
+- 配置 Load Balancer
 
 ```yaml
 listener:
@@ -116,10 +116,10 @@ listener:
 
 | Field | Default | Description |
 | --- | --- | --- |
-| type | ClusterIP | 监听器类型，可以配置为ClusterIP或者LoadBalancer |
-| ports | mqtt: 1883 mqtts: 8883 ws: 8083 wss: 8084 dashboard: 18083 api: 8081 | EMQ X端口名称 详细请参考[EMQ X官方文档](https://www.emqx.io/docs/zh/v4.3/tutorial/deploy.html) |
+| type | ClusterIP | 监听器类型，可以配置为 ClusterIP 或者 LoadBalancer |
+| ports | mqtt: 1883 mqtts: 8883 ws: 8083 wss: 8084 dashboard: 18083 api: 8081 | EMQX 端口名称 详细请参考 [EMQX 官方文档](https://www.emqx.io/docs/zh/v4.3/tutorial/deploy.html) |
 
-> 当type设置为LoadBalancer，各个云平台需要配置不同的annotations，例如在EKS平台设置为: `service.beta.kubernetes.io/aws-load-balancer-type: nlb`
+> 当 type 设置为 LoadBalancer，各个云平台需要配置不同的 annotations，例如在 EKS 平台设置为: `service.beta.kubernetes.io/aws-load-balancer-type: nlb`
 >
 
 - 配置ACL
@@ -151,9 +151,9 @@ acl:
 
 | Field | Description |
 | --- | --- |
-| permission | 执行权限控制操作，可取值为allow，deny |
+| permission | 执行权限控制操作，可取值为 allow，deny |
 | username | 用户名 (username)为 "dashboard" 的用户生效 |
-| action | 规则所控制的操作，可取值为publish，subscribe，pubsub |
+| action | 规则所控制的操作，可取值为 publish，subscribe，pubsub |
 | topics.filter | 主题过滤器，表示规则可以匹配的主题 |
 - 配置插件（plugins）
 
@@ -178,7 +178,7 @@ plugins:
 | Field | Description |
 | --- | --- |
 | name | 插件名称 |
-| enable | 启用或者禁用插件，可取值true或者false |
+| enable | 启用或者禁用插件，可取值 true 或者 false |
 
 > 详细信息可参考[官方文档](https://docs.emqx.cn/broker/v4.3/advanced/plugins.html#%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8)
 >
@@ -200,7 +200,7 @@ modules:
 > 详细信息可参考[官方文档](https://docs.emqx.cn/broker/v4.3/advanced/internal-modules.html)
 >
 
-- 配置license（针对EMQ X企业版）
+- 配置 license（针对 EMQX 企业版）
 
 | Field | Default | Description |
 | --- | --- | --- |

@@ -1,6 +1,6 @@
-# 扩展EMQ X集群
+# 扩展 EMQX 集群
 
-[EMQ X集群介绍](https://docs.emqx.io/en/broker/v4.3/advanced/cluster.html)
+[EMQX 集群介绍](https://docs.emqx.io/en/broker/v4.3/advanced/cluster.html)
 
 **Note**: 现在只支持k8s的节点发现策略
 
