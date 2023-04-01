@@ -1,17 +1,17 @@
 ## Deploy EMQX Operator
 
-### Prepare the environment
+### Prepare the Environment
 
 Before deploying EMQX Operator, please confirm that the following components have been installed:
 
 | Software                | Version Requirements |
 |:-----------------------:|:--------------------:|
-|  [Helm](https://helm.sh)                 |  >= 3           |
-|  [cert-manager](https://cert-manager.io) |  >= 1.1.6       |
+|  [Helm](https://helm.sh)                 |  3 or higher  |
+|  [cert-manager](https://cert-manager.io) |  1.1.6 or higher  |
 
 ### Install EMQX Operator
 
-> Please make sure the [cert-manager](https://cert-manager.io) is ready
+Run the command below to install the Operator:
 
 ```bash
 $ helm repo add emqx https://repos.emqx.io/charts
@@ -19,7 +19,7 @@ $ helm repo update
 $ helm install emqx-operator emqx/emqx-operator --namespace emqx-operator-system --create-namespace
 ```
 
-Wait EMQX Operator ready
+Wait EMQX Operator ready:
 
 ```bash
 $ kubectl wait --for=condition=Ready pods -l "control-plane=controller-manager" -n emqx-operator-system
@@ -68,7 +68,7 @@ $ helm uninstall emqx-operator -n emqx-operator-system
 
    ```bash
    $ kubectl get emqx
-
+   
    NAME   IMAGE      STATUS    AGE
    emqx   emqx:5.0   Running   2m55s
    ```
@@ -101,7 +101,7 @@ $ helm uninstall emqx-operator -n emqx-operator-system
 
    ```bash
    $ kubectl get emqxbrokers
-
+   
    NAME   STATUS   AGE
    emqx   Running  8m33s
    ```
@@ -134,7 +134,7 @@ $ helm uninstall emqx-operator -n emqx-operator-system
 
    ```bash
    $ kubectl get emqxenterprises
-
+   
    NAME      STATUS   AGE
    emqx-ee   Running  8m33s
    ```
